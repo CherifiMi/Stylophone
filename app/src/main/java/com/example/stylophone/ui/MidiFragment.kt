@@ -38,7 +38,24 @@ class MidiFragment : Fragment() {
 
         val note = view.findViewById<Button>(R.id.button)
 
+        note.setOnTouchListener { v, event ->
+            if (event.action == MotionEvent.ACTION_DOWN) {
+                // Pressed
+                if (!isPlaying) {
 
+                    Thread {
+                        initTrack()
+                        startPlaying()
+                        playback(440)
+                    }.start()
+                }
+            }
+            else if (event.action == MotionEvent.ACTION_UP) {
+                // Released
+                stopPlaying()
+            }
+            true
+        }
 
         return view
     }
