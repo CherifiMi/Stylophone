@@ -1,24 +1,19 @@
 package com.example.stylophone.ui
 
-import android.R.attr
 import android.media.AudioFormat
-import android.media.JetPlayer
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
-import android.widget.Toast
 import com.example.stylophone.R
 import android.media.AudioTrack
 
 import android.media.AudioManager
 import android.view.MotionEvent
 
-import android.R.attr.button
 import android.annotation.SuppressLint
-import android.view.View.OnTouchListener
 
 
 class MidiFragment : Fragment() {
@@ -36,9 +31,24 @@ class MidiFragment : Fragment() {
     ): View? {
         val view = inflater.inflate(R.layout.fragment_midi, container, false)
 
-        val note = view.findViewById<Button>(R.id.button)
+        //buttons
+        val A = view.findViewById<Button>(R.id.Anote)
+        val B = view.findViewById<Button>(R.id.Bnote)
+        val C = view.findViewById<Button>(R.id.Cnote)
 
-        note.setOnTouchListener { v, event ->
+        //notes
+        note(A, 440)
+        note(B, 493)
+        note(C, 523)
+
+
+        return view
+    }
+
+    @SuppressLint("ClickableViewAccessibility")
+    fun note(btn: Button, i: Int) {
+
+        btn.setOnTouchListener { v, event ->
             if (event.action == MotionEvent.ACTION_DOWN) {
                 // Pressed
                 if (!isPlaying) {
@@ -46,7 +56,7 @@ class MidiFragment : Fragment() {
                     Thread {
                         initTrack()
                         startPlaying()
-                        playback(440)
+                        playback(i)
                     }.start()
                 }
             }
@@ -57,15 +67,9 @@ class MidiFragment : Fragment() {
             true
         }
 
-        return view
     }
 
     private fun initTrack() {
-        // Very similar to opening a stream in PyAudio
-        // In Android create a AudioTrack instance and initialize it with different parameters
-
-        // AudioTrack is deprecated for some android versions
-        // Please look up for other alternatives if this does not work
         Track = AudioTrack(
             AudioManager.MODE_NORMAL, Fs, AudioFormat.CHANNEL_OUT_MONO,
             AudioFormat.ENCODING_PCM_16BIT, buffLength, AudioTrack.MODE_STREAM
@@ -73,12 +77,11 @@ class MidiFragment : Fragment() {
     }
 
     private fun playback(i: Int) {
-        // simple sine wave generator
         val frame_out = ShortArray(buffLength)
-        val amplitude = 32767
+        val amplitude = 42767
         val frequency = i
-        val twopi: Double = 8.0 * Math.atan(1.0)
-        var phase: Double = 0.0
+        val twopi: Double = 16.0 * Math.atan(1.0)
+        var phase = 0.0
 
         while (isPlaying) {
             for (i in 0 until buffLength) {
@@ -108,3 +111,5 @@ class MidiFragment : Fragment() {
 
 
 }
+
+
