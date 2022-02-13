@@ -1,11 +1,12 @@
 package com.example.stylophone.ui.graphic
 
+import com.example.stylophone.viewModel.MainViewModel
 import processing.core.PApplet
 
-class Oscilloscope: PApplet() {
+class Oscilloscope(var mainViewModel: MainViewModel): PApplet() {
 
     //--------------values
-    var period: Float = 1.0f
+    //var period: Float = 1.0f
 
     var xspacing: Int = 8
     var w: Int = 0
@@ -24,9 +25,13 @@ class Oscilloscope: PApplet() {
 
     override fun draw() {
 
-        period = 1040f
+        var period: Float? = mainViewModel.num.value
 
-        dx = (TWO_PI / period) * xspacing
+        if (period == null){
+            dx = (TWO_PI / 1) * xspacing
+        }
+        else{dx = (TWO_PI / period) * xspacing}
+
         yvalues = FloatArray(w / xspacing)
 
         background(0f)

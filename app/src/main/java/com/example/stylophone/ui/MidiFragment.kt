@@ -14,6 +14,8 @@ import android.media.AudioManager
 import android.view.MotionEvent
 
 import android.annotation.SuppressLint
+import androidx.lifecycle.ViewModelProvider
+import com.example.stylophone.viewModel.MainViewModel
 
 
 class MidiFragment : Fragment() {
@@ -23,6 +25,14 @@ class MidiFragment : Fragment() {
     lateinit var Track: AudioTrack
     val Fs: Int = 44100
     val buffLength: Int = AudioTrack.getMinBufferSize(Fs, AudioFormat.CHANNEL_OUT_MONO, AudioFormat.ENCODING_PCM_16BIT)
+    private lateinit var mainViewModel: MainViewModel
+
+
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        mainViewModel = ViewModelProvider(requireActivity()).get(MainViewModel::class.java)
+    }
 
     @SuppressLint("ClickableViewAccessibility")
     override fun onCreateView(
@@ -94,7 +104,7 @@ class MidiFragment : Fragment() {
             if (event.action == MotionEvent.ACTION_DOWN) {
                 // Pressed
                 if (!isPlaying) {
-
+                    mainViewModel.setNum(i.toFloat())
                     Thread {
                         initTrack()
                         startPlaying()
@@ -105,6 +115,7 @@ class MidiFragment : Fragment() {
             else if (event.action == MotionEvent.ACTION_UP) {
                 // Released
                 stopPlaying()
+                mainViewModel.setNum(1f)
             }
             true
         }
