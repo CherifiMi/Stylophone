@@ -28,7 +28,6 @@
 
     <Button
         android:id="@+id/n6.5"
-        android:backgroundTint="@color/black"
         android:layout_width="64dp"
         android:layout_height="120dp"
         android:text="6.5"
@@ -119,7 +118,6 @@
 
     <Button
         android:id="@+id/n1.5"
-        android:backgroundTint="@color/black"
         android:layout_width="64dp"
         android:layout_height="120dp"
         android:layout_marginStart="32dp"
@@ -129,7 +127,6 @@
 
     <Button
         android:id="@+id/n3.5"
-        android:backgroundTint="@color/black"
         android:layout_width="64dp"
         android:layout_height="120dp"
         android:layout_marginStart="64dp"
@@ -139,7 +136,6 @@
 
     <Button
         android:id="@+id/n4.5"
-        android:backgroundTint="@color/black"
         android:layout_width="64dp"
         android:layout_height="120dp"
         android:text="4.5"
@@ -148,7 +144,6 @@
 
     <Button
         android:id="@+id/n7.5"
-        android:backgroundTint="@color/black"
         android:layout_width="64dp"
         android:layout_height="120dp"
         android:text="7.5"
@@ -157,7 +152,6 @@
 
     <Button
         android:id="@+id/n8.5"
-        android:backgroundTint="@color/black"
         android:layout_width="64dp"
         android:layout_height="120dp"
         android:text="8.5"
@@ -166,7 +160,6 @@
 
     <Button
         android:id="@+id/n10.5"
-        android:backgroundTint="@color/black"
         android:layout_width="64dp"
         android:layout_height="120dp"
         android:layout_marginStart="64dp"
@@ -176,11 +169,20 @@
 
     <Button
         android:id="@+id/n11.5"
-        android:backgroundTint="@color/black"
         android:layout_width="64dp"
         android:layout_height="120dp"
         android:text="11.5"
         app:layout_constraintStart_toEndOf="@+id/n10.5"
         app:layout_constraintTop_toTopOf="@+id/n10.5" />
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/fragmentContainerView2"
+        android:name="com.example.stylophone.ui.CanvasFragment"
+        android:layout_width="0dp"
+        android:layout_height="64dp"
+        app:layout_constraintBottom_toTopOf="@+id/n6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
