@@ -10,6 +10,5 @@ class MainViewModel: ViewModel() {
 
     fun setNum(num: Float){
         mutableNum.value = num
-
     }
 }
