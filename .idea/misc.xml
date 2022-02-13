@@ -4,7 +4,8 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/mito/Resources/android/Stylophone/app/src/main/res/layout/activity_fullscreen.xml" value="0.12882298424467098" />
-        <entry key="..\:/mito/Resources/android/Stylophone/app/src/main/res/layout/fragment_midi.xml" value="0.22" />
+        <entry key="..\:/mito/Resources/android/Stylophone/app/src/main/res/layout/fragment_canvas.xml" value="0.12545289855072464" />
+        <entry key="..\:/mito/Resources/android/Stylophone/app/src/main/res/layout/fragment_midi.xml" value="0.12" />
       </map>
     </option>
   </component>

@@ -31,15 +31,57 @@ class MidiFragment : Fragment() {
     ): View? {
         val view = inflater.inflate(R.layout.fragment_midi, container, false)
 
+
         //buttons
-        val A = view.findViewById<Button>(R.id.Anote)
-        val B = view.findViewById<Button>(R.id.Bnote)
-        val C = view.findViewById<Button>(R.id.Cnote)
+        val A = view.findViewById<Button>(R.id.n1)
+        val B = view.findViewById<Button>(R.id.n2)
+        val C = view.findViewById<Button>(R.id.n3)
+        val D = view.findViewById<Button>(R.id.n4)
+        val E = view.findViewById<Button>(R.id.n5)
+        val F = view.findViewById<Button>(R.id.n6)
+        val G = view.findViewById<Button>(R.id.n7)
+
+        val a = view.findViewById<Button>(R.id.n8)
+        val b = view.findViewById<Button>(R.id.n9)
+        val c = view.findViewById<Button>(R.id.n10)
+        val d = view.findViewById<Button>(R.id.n11)
+        val e = view.findViewById<Button>(R.id.n12)
+
+        val Ac = view.findViewById<Button>(R.id.n1_5)
+        val Cc = view.findViewById<Button>(R.id.n3_5)
+        val Dc = view.findViewById<Button>(R.id.n4_5)
+        val Fc = view.findViewById<Button>(R.id.n6_5)
+        val Gc = view.findViewById<Button>(R.id.n7_5)
+
+        val ac = view.findViewById<Button>(R.id.n8_5)
+        val cc = view.findViewById<Button>(R.id.n10_5)
+        val dc = view.findViewById<Button>(R.id.n11_5)
 
         //notes
         note(A, 440)
         note(B, 493)
         note(C, 523)
+        note(D, 587)
+        note(E, 659)
+        note(F, 692)
+        note(G, 784)
+
+        note(a, 880)
+        note(b, 986)
+        note(c, 1046)
+        note(d, 1174)
+        note(e, 1368)
+
+        note(Ac, 466)
+        note(Cc, 554)
+        note(Dc, 622)
+        note(Fc, 740)
+        note(Gc, 830)
+
+        note(ac, 932)
+        note(cc, 1108)
+        note(dc, 1244)
+
 
 
         return view
@@ -80,7 +122,7 @@ class MidiFragment : Fragment() {
         val frame_out = ShortArray(buffLength)
         val amplitude = 42767
         val frequency = i
-        val twopi: Double = 16.0 * Math.atan(1.0)
+        val twopi: Double = 8.0 * Math.atan(1.0)
         var phase = 0.0
 
         while (isPlaying) {
