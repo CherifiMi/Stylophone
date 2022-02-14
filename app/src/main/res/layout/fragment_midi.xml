@@ -180,9 +180,104 @@
         android:name="com.example.stylophone.ui.CanvasFragment"
         android:layout_width="0dp"
         android:layout_height="64dp"
+        android:layout_marginBottom="8dp"
         app:layout_constraintBottom_toTopOf="@+id/n6"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/adda"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="32dp"
+        app:layout_constraintBottom_toTopOf="@+id/fragmentContainerView2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/a"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:text="42767A"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/adda"
+        app:layout_constraintStart_toEndOf="@+id/adda"
+        app:layout_constraintTop_toTopOf="@+id/adda" />
+
+    <Button
+        android:id="@+id/mina"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="6dp"
+        app:layout_constraintBottom_toBottomOf="@+id/a"
+        app:layout_constraintStart_toEndOf="@+id/a"
+        app:layout_constraintTop_toTopOf="@+id/a" />
+
+
+    <Button
+        android:id="@+id/addv"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="44dp"
+        app:layout_constraintBottom_toTopOf="@+id/fragmentContainerView2"
+        app:layout_constraintStart_toEndOf="@+id/mina"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/v"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:text="0.00V"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/addv"
+        app:layout_constraintStart_toEndOf="@+id/addv"
+        app:layout_constraintTop_toTopOf="@+id/addv" />
+
+    <Button
+        android:id="@+id/minv"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="6dp"
+        app:layout_constraintBottom_toBottomOf="@+id/v"
+        app:layout_constraintStart_toEndOf="@+id/v"
+        app:layout_constraintTop_toTopOf="@+id/v" />
+
+
+
+    <Button
+        android:id="@+id/addo"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="44dp"
+        app:layout_constraintBottom_toTopOf="@+id/fragmentContainerView2"
+        app:layout_constraintStart_toEndOf="@+id/minv"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/o"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:text="8.00Ω"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/addo"
+        app:layout_constraintStart_toEndOf="@+id/addo"
+        app:layout_constraintTop_toTopOf="@+id/addo" />
+
+    <Button
+        android:id="@+id/mino"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="6dp"
+        app:layout_constraintBottom_toBottomOf="@+id/o"
+        app:layout_constraintStart_toEndOf="@+id/o"
+        app:layout_constraintTop_toTopOf="@+id/o" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

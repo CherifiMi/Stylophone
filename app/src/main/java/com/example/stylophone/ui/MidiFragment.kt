@@ -14,6 +14,7 @@ import android.media.AudioManager
 import android.view.MotionEvent
 
 import android.annotation.SuppressLint
+import android.widget.TextView
 import androidx.lifecycle.ViewModelProvider
 import com.example.stylophone.viewModel.MainViewModel
 
@@ -27,6 +28,10 @@ class MidiFragment : Fragment() {
     val buffLength: Int = AudioTrack.getMinBufferSize(Fs, AudioFormat.CHANNEL_OUT_MONO, AudioFormat.ENCODING_PCM_16BIT)
     private lateinit var mainViewModel: MainViewModel
 
+    //----------------changes
+    var amplitude = 42767
+    var phase = 0
+    var oum = 8
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -43,6 +48,18 @@ class MidiFragment : Fragment() {
 
 
         //buttons
+        val adda = view.findViewById<Button>(R.id.mina)
+        val mina = view.findViewById<Button>(R.id.adda)
+        val txta = view.findViewById<TextView>(R.id.a)
+
+        val addv = view.findViewById<Button>(R.id.minv)
+        val minv = view.findViewById<Button>(R.id.addv)
+        val txtv = view.findViewById<TextView>(R.id.v)
+
+        val addo = view.findViewById<Button>(R.id.mino)
+        val mino = view.findViewById<Button>(R.id.addo)
+        val txto = view.findViewById<TextView>(R.id.o)
+
         val A = view.findViewById<Button>(R.id.n1)
         val B = view.findViewById<Button>(R.id.n2)
         val C = view.findViewById<Button>(R.id.n3)
@@ -92,9 +109,31 @@ class MidiFragment : Fragment() {
         note(cc, 1108)
         note(dc, 1244)
 
+        //changes
+        change(adda, mina, txta, amplitude, 5000, "A")
+        change(addv, minv, txtv, phase, 100, ".00V")
+        change(addo, mino, txto, oum, 10, ".00Ω")
 
 
         return view
+    }
+
+    private fun change(add: Button, min: Button, txt: TextView, v: Int, i: Int, t: String) {
+
+        var j: Int = v
+
+        add.setOnClickListener{
+            j += i
+            txt.text = j.toString()+t
+        }
+        min.setOnClickListener{
+            if (j<= i){
+                j = 0
+            }else{
+                j -= i
+                txt.text = j.toString()+t
+            }
+        }
     }
 
     @SuppressLint("ClickableViewAccessibility")
@@ -131,17 +170,19 @@ class MidiFragment : Fragment() {
 
     private fun playback(i: Int) {
         val frame_out = ShortArray(buffLength)
-        val amplitude = 42767
         val frequency = i
-        val twopi: Double = 8.0 * Math.atan(1.0)
-        var phase = 0.0
+
+
+
+        val twopi: Double = oum.toDouble() * Math.atan(1.0)
+        var ph = phase.toDouble()
 
         while (isPlaying) {
             for (i in 0 until buffLength) {
-                frame_out[i] = (amplitude * Math.sin(phase)).toInt().toShort()
-                phase += twopi * frequency / Fs
+                frame_out[i] = (amplitude * Math.sin(ph)).toInt().toShort()
+                ph += twopi * frequency / Fs
                 if (phase > twopi) {
-                    phase -= twopi
+                    ph -= twopi
                 }
             }
             Track.write(frame_out, 0, buffLength)
