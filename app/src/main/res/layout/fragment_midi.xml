@@ -7,7 +7,7 @@
     android:background="@color/black"
     tools:context=".ui.MidiFragment">
 
-    <Button
+    <ImageButton
         android:id="@+id/n6"
         android:layout_width="64dp"
         android:layout_height="208dp"
@@ -17,7 +17,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/n6.5" />
 
-    <Button
+    <ImageButton
         android:id="@+id/n7"
         android:layout_width="64dp"
         android:layout_height="208dp"
@@ -26,7 +26,7 @@
         app:layout_constraintStart_toStartOf="@+id/n6.5"
         app:layout_constraintTop_toTopOf="@+id/n6.5" />
 
-    <Button
+    <ImageButton
         android:id="@+id/n6.5"
         android:layout_width="64dp"
         android:layout_height="120dp"
@@ -36,7 +36,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/n6" />
 
-    <Button
+    <ImageButton
         android:id="@+id/n5"
         android:layout_width="64dp"
         android:layout_height="208dp"
@@ -44,7 +44,7 @@
         app:layout_constraintEnd_toStartOf="@+id/n6"
         app:layout_constraintTop_toTopOf="@+id/n6" />
 
-    <Button
+    <ImageButton
         android:id="@+id/n4"
         android:layout_width="64dp"
         android:layout_height="208dp"
@@ -52,7 +52,7 @@
         app:layout_constraintEnd_toStartOf="@+id/n5"
         app:layout_constraintTop_toTopOf="@+id/n5" />
 
-    <Button
+    <ImageButton
         android:id="@+id/n3"
         android:layout_width="64dp"
         android:layout_height="208dp"
@@ -60,7 +60,7 @@
         app:layout_constraintEnd_toStartOf="@+id/n4"
         app:layout_constraintTop_toTopOf="@+id/n4" />
 
-    <Button
+    <ImageButton
         android:id="@+id/n2"
         android:layout_width="64dp"
         android:layout_height="208dp"
@@ -68,15 +68,16 @@
         app:layout_constraintEnd_toStartOf="@+id/n3"
         app:layout_constraintTop_toTopOf="@+id/n3" />
 
-    <Button
+    <ImageButton
         android:id="@+id/n1"
+        android:background="@android:color/transparent"
+        app:srcCompat="@drawable/anim_1"
         android:layout_width="64dp"
         android:layout_height="208dp"
-        android:text="1"
         app:layout_constraintEnd_toStartOf="@+id/n2"
         app:layout_constraintTop_toTopOf="@+id/n2" />
 
-    <Button
+    <ImageButton
         android:id="@+id/n8"
         android:layout_width="64dp"
         android:layout_height="208dp"
@@ -84,7 +85,7 @@
         app:layout_constraintStart_toEndOf="@+id/n7"
         app:layout_constraintTop_toTopOf="@+id/n7" />
 
-    <Button
+    <ImageButton
         android:id="@+id/n9"
         android:layout_width="64dp"
         android:layout_height="208dp"
@@ -92,7 +93,7 @@
         app:layout_constraintStart_toEndOf="@+id/n8"
         app:layout_constraintTop_toTopOf="@+id/n8" />
 
-    <Button
+    <ImageButton
         android:id="@+id/n10"
         android:layout_width="64dp"
         android:layout_height="208dp"
@@ -100,7 +101,7 @@
         app:layout_constraintStart_toEndOf="@+id/n9"
         app:layout_constraintTop_toTopOf="@+id/n9" />
 
-    <Button
+    <ImageButton
         android:id="@+id/n11"
         android:layout_width="64dp"
         android:layout_height="208dp"
@@ -108,15 +109,17 @@
         app:layout_constraintStart_toEndOf="@+id/n10"
         app:layout_constraintTop_toTopOf="@+id/n10" />
 
-    <Button
+    <ImageButton
         android:id="@+id/n12"
+        android:background="@android:color/transparent"
+        app:srcCompat="@drawable/anim_12"
         android:layout_width="64dp"
         android:layout_height="208dp"
         android:text="12"
         app:layout_constraintStart_toEndOf="@+id/n11"
         app:layout_constraintTop_toTopOf="@+id/n11" />
 
-    <Button
+    <ImageButton
         android:id="@+id/n1.5"
         android:layout_width="64dp"
         android:layout_height="120dp"
@@ -125,7 +128,7 @@
         app:layout_constraintStart_toStartOf="@+id/n1"
         app:layout_constraintTop_toTopOf="@+id/n1" />
 
-    <Button
+    <ImageButton
         android:id="@+id/n3.5"
         android:layout_width="64dp"
         android:layout_height="120dp"
@@ -134,7 +137,7 @@
         app:layout_constraintStart_toEndOf="@+id/n1.5"
         app:layout_constraintTop_toTopOf="@+id/n3" />
 
-    <Button
+    <ImageButton
         android:id="@+id/n4.5"
         android:layout_width="64dp"
         android:layout_height="120dp"
@@ -142,7 +145,7 @@
         app:layout_constraintStart_toEndOf="@+id/n3.5"
         app:layout_constraintTop_toTopOf="@+id/n3.5" />
 
-    <Button
+    <ImageButton
         android:id="@+id/n7.5"
         android:layout_width="64dp"
         android:layout_height="120dp"
@@ -150,7 +153,7 @@
         app:layout_constraintStart_toEndOf="@+id/n6.5"
         app:layout_constraintTop_toTopOf="@+id/n6.5" />
 
-    <Button
+    <ImageButton
         android:id="@+id/n8.5"
         android:layout_width="64dp"
         android:layout_height="120dp"
@@ -158,7 +161,7 @@
         app:layout_constraintStart_toEndOf="@+id/n7.5"
         app:layout_constraintTop_toTopOf="@+id/n7.5" />
 
-    <Button
+    <ImageButton
         android:id="@+id/n10.5"
         android:layout_width="64dp"
         android:layout_height="120dp"
@@ -167,7 +170,7 @@
         app:layout_constraintStart_toEndOf="@+id/n8.5"
         app:layout_constraintTop_toTopOf="@+id/n8.5" />
 
-    <Button
+    <ImageButton
         android:id="@+id/n11.5"
         android:layout_width="64dp"
         android:layout_height="120dp"

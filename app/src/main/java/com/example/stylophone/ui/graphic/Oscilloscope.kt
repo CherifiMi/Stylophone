@@ -54,6 +54,8 @@ class Oscilloscope(var mainViewModel: MainViewModel): PApplet() {
         for (x in 0 until yvalues.size) {
             // ! #ed1e79
             fill(237f, 30f, 121f)
+            stroke(255f)
+            strokeWeight(2f)
             ellipse((x * xspacing).toFloat(), height / 2 + yvalues[x], 16f, 16f)
         }
     }
