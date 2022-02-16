@@ -84,7 +84,7 @@ class MidiFragment : Fragment() {
 
         //notes
         note(A, 440)
-        /*note(B, 493)
+        note(B, 493)
         note(C, 523)
         note(D, 587)
         note(E, 659)
@@ -94,10 +94,10 @@ class MidiFragment : Fragment() {
         note(a, 880)
         note(b, 986)
         note(c, 1046)
-        note(d, 1174)*/
+        note(d, 1174)
         note(e, 1368)
 
-        /*note(Ac, 466)
+        note(Ac, 466)
         note(Cc, 554)
         note(Dc, 622)
         note(Fc, 740)
@@ -105,7 +105,7 @@ class MidiFragment : Fragment() {
 
         note(ac, 932)
         note(cc, 1108)
-        note(dc, 1244)*/
+        note(dc, 1244)
 
         //changes
         change(adda, mina, txta, amplitude, 5000, "A")

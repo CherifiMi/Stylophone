@@ -9,6 +9,8 @@
 
     <ImageButton
         android:id="@+id/n6"
+        android:background="@android:color/transparent"
+        app:srcCompat="@drawable/anim_all"
         android:layout_width="64dp"
         android:layout_height="208dp"
         android:layout_marginEnd="32dp"
@@ -19,6 +21,8 @@
 
     <ImageButton
         android:id="@+id/n7"
+        android:background="@android:color/transparent"
+        app:srcCompat="@drawable/anim_all"
         android:layout_width="64dp"
         android:layout_height="208dp"
         android:layout_marginStart="32dp"
@@ -30,7 +34,8 @@
         android:id="@+id/n6.5"
         android:layout_width="64dp"
         android:layout_height="120dp"
-        android:text="6.5"
+        android:background="@android:color/transparent"
+        app:srcCompat="@drawable/anim_cl"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
@@ -38,6 +43,8 @@
 
     <ImageButton
         android:id="@+id/n5"
+        android:background="@android:color/transparent"
+        app:srcCompat="@drawable/anim_all"
         android:layout_width="64dp"
         android:layout_height="208dp"
         android:text="5"
@@ -46,6 +53,8 @@
 
     <ImageButton
         android:id="@+id/n4"
+        android:background="@android:color/transparent"
+        app:srcCompat="@drawable/anim_all"
         android:layout_width="64dp"
         android:layout_height="208dp"
         android:text="4"
@@ -54,6 +63,8 @@
 
     <ImageButton
         android:id="@+id/n3"
+        android:background="@android:color/transparent"
+        app:srcCompat="@drawable/anim_all"
         android:layout_width="64dp"
         android:layout_height="208dp"
         android:text="3"
@@ -62,6 +73,8 @@
 
     <ImageButton
         android:id="@+id/n2"
+        android:background="@android:color/transparent"
+        app:srcCompat="@drawable/anim_all"
         android:layout_width="64dp"
         android:layout_height="208dp"
         android:text="2"
@@ -79,6 +92,8 @@
 
     <ImageButton
         android:id="@+id/n8"
+        android:background="@android:color/transparent"
+        app:srcCompat="@drawable/anim_all"
         android:layout_width="64dp"
         android:layout_height="208dp"
         android:text="8"
@@ -87,6 +102,8 @@
 
     <ImageButton
         android:id="@+id/n9"
+        android:background="@android:color/transparent"
+        app:srcCompat="@drawable/anim_all"
         android:layout_width="64dp"
         android:layout_height="208dp"
         android:text="9"
@@ -95,6 +112,8 @@
 
     <ImageButton
         android:id="@+id/n10"
+        android:background="@android:color/transparent"
+        app:srcCompat="@drawable/anim_all"
         android:layout_width="64dp"
         android:layout_height="208dp"
         android:text="10"
@@ -103,6 +122,8 @@
 
     <ImageButton
         android:id="@+id/n11"
+        android:background="@android:color/transparent"
+        app:srcCompat="@drawable/anim_alll"
         android:layout_width="64dp"
         android:layout_height="208dp"
         android:text="11"
@@ -124,7 +145,8 @@
         android:layout_width="64dp"
         android:layout_height="120dp"
         android:layout_marginStart="32dp"
-        android:text="1.5"
+        android:background="@android:color/transparent"
+        app:srcCompat="@drawable/anim_cnb"
         app:layout_constraintStart_toStartOf="@+id/n1"
         app:layout_constraintTop_toTopOf="@+id/n1" />
 
@@ -133,7 +155,8 @@
         android:layout_width="64dp"
         android:layout_height="120dp"
         android:layout_marginStart="64dp"
-        android:text="3.5"
+        android:background="@android:color/transparent"
+        app:srcCompat="@drawable/anim_cl"
         app:layout_constraintStart_toEndOf="@+id/n1.5"
         app:layout_constraintTop_toTopOf="@+id/n3" />
 
@@ -141,7 +164,8 @@
         android:id="@+id/n4.5"
         android:layout_width="64dp"
         android:layout_height="120dp"
-        android:text="4.5"
+        android:background="@android:color/transparent"
+        app:srcCompat="@drawable/anim_cr"
         app:layout_constraintStart_toEndOf="@+id/n3.5"
         app:layout_constraintTop_toTopOf="@+id/n3.5" />
 
@@ -149,6 +173,8 @@
         android:id="@+id/n7.5"
         android:layout_width="64dp"
         android:layout_height="120dp"
+        android:background="@android:color/transparent"
+        app:srcCompat="@drawable/anim_allb"
         android:text="7.5"
         app:layout_constraintStart_toEndOf="@+id/n6.5"
         app:layout_constraintTop_toTopOf="@+id/n6.5" />
@@ -157,7 +183,8 @@
         android:id="@+id/n8.5"
         android:layout_width="64dp"
         android:layout_height="120dp"
-        android:text="8.5"
+        android:background="@android:color/transparent"
+        app:srcCompat="@drawable/anim_cr"
         app:layout_constraintStart_toEndOf="@+id/n7.5"
         app:layout_constraintTop_toTopOf="@+id/n7.5" />
 
@@ -166,7 +193,8 @@
         android:layout_width="64dp"
         android:layout_height="120dp"
         android:layout_marginStart="64dp"
-        android:text="10.5"
+        android:background="@android:color/transparent"
+        app:srcCompat="@drawable/anim_cl"
         app:layout_constraintStart_toEndOf="@+id/n8.5"
         app:layout_constraintTop_toTopOf="@+id/n8.5" />
 
@@ -174,7 +202,8 @@
         android:id="@+id/n11.5"
         android:layout_width="64dp"
         android:layout_height="120dp"
-        android:text="11.5"
+        android:background="@android:color/transparent"
+        app:srcCompat="@drawable/anim_cr"
         app:layout_constraintStart_toEndOf="@+id/n10.5"
         app:layout_constraintTop_toTopOf="@+id/n10.5" />
 
