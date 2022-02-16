@@ -36,6 +36,7 @@ class Oscilloscope(var mainViewModel: MainViewModel): PApplet() {
 
         background(0f)
         calcWave()
+        renderWave2()
         renderWave()
     }
     fun calcWave() {
@@ -54,9 +55,18 @@ class Oscilloscope(var mainViewModel: MainViewModel): PApplet() {
         for (x in 0 until yvalues.size) {
             // ! #ed1e79
             fill(237f, 30f, 121f)
+            ellipse((x * xspacing).toFloat(), height / 2 + yvalues[x], 16f, 16f)
+        }
+    }
+    fun renderWave2() {
+        noStroke()
+        fill(255)
+        for (x in 0 until yvalues.size) {
+            // ! #ed1e79
+            fill(255f)
             stroke(255f)
             strokeWeight(2f)
-            ellipse((x * xspacing).toFloat(), height / 2 + yvalues[x], 16f, 16f)
+            ellipse((x * xspacing).toFloat(), height / 2 + yvalues[x], 24f, 24f)
         }
     }
 

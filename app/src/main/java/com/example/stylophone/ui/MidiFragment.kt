@@ -50,17 +50,18 @@ class MidiFragment : Fragment() {
 
 
         //buttons
-        val adda = view.findViewById<Button>(R.id.mina)
-        val mina = view.findViewById<Button>(R.id.adda)
+        val adda = view.findViewById<ImageButton>(R.id.mina)
+        val mina = view.findViewById<ImageButton>(R.id.adda)
         val txta = view.findViewById<TextView>(R.id.a)
 
-        val addv = view.findViewById<Button>(R.id.minv)
-        val minv = view.findViewById<Button>(R.id.addv)
+        val addv = view.findViewById<ImageButton>(R.id.minv)
+        val minv = view.findViewById<ImageButton>(R.id.addv)
         val txtv = view.findViewById<TextView>(R.id.v)
 
-        val addo = view.findViewById<Button>(R.id.mino)
-        val mino = view.findViewById<Button>(R.id.addo)
+        val addo = view.findViewById<ImageButton>(R.id.mino)
+        val mino = view.findViewById<ImageButton>(R.id.addo)
         val txto = view.findViewById<TextView>(R.id.o)
+
         val A = view.findViewById<ImageButton>(R.id.n1)
         val B = view.findViewById<ImageButton>(R.id.n2)
         val C = view.findViewById<ImageButton>(R.id.n3)
@@ -68,16 +69,19 @@ class MidiFragment : Fragment() {
         val E = view.findViewById<ImageButton>(R.id.n5)
         val F = view.findViewById<ImageButton>(R.id.n6)
         val G = view.findViewById<ImageButton>(R.id.n7)
+
         val a = view.findViewById<ImageButton>(R.id.n8)
         val b = view.findViewById<ImageButton>(R.id.n9)
         val c = view.findViewById<ImageButton>(R.id.n10)
         val d = view.findViewById<ImageButton>(R.id.n11)
         val e = view.findViewById<ImageButton>(R.id.n12)
+
         val Ac = view.findViewById<ImageButton>(R.id.n1_5)
         val Cc = view.findViewById<ImageButton>(R.id.n3_5)
         val Dc = view.findViewById<ImageButton>(R.id.n4_5)
         val Fc = view.findViewById<ImageButton>(R.id.n6_5)
         val Gc = view.findViewById<ImageButton>(R.id.n7_5)
+
         val ac = view.findViewById<ImageButton>(R.id.n8_5)
         val cc = view.findViewById<ImageButton>(R.id.n10_5)
         val dc = view.findViewById<ImageButton>(R.id.n11_5)
@@ -127,7 +131,7 @@ class MidiFragment : Fragment() {
 
     }
 
-    private fun change(add: Button, min: Button, txt: TextView, v: Int, i: Int, t: String) {
+    private fun change(add: ImageButton, min: ImageButton, txt: TextView, v: Int, i: Int, t: String) {
 
         var j: Int = v
 

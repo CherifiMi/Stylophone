@@ -212,20 +212,22 @@
         android:name="com.example.stylophone.ui.CanvasFragment"
         android:layout_width="0dp"
         android:layout_height="64dp"
-        android:layout_marginBottom="8dp"
+        android:layout_marginBottom="16dp"
         app:layout_constraintBottom_toTopOf="@+id/n6"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent" />
 
-    <Button
+    <ImageButton
         android:id="@+id/adda"
         android:layout_width="32dp"
         android:layout_height="32dp"
         android:layout_marginStart="32dp"
+        android:background="@android:color/transparent"
         app:layout_constraintBottom_toTopOf="@+id/fragmentContainerView2"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/add" />
 
     <TextView
         android:id="@+id/a"
@@ -239,24 +241,28 @@
         app:layout_constraintStart_toEndOf="@+id/adda"
         app:layout_constraintTop_toTopOf="@+id/adda" />
 
-    <Button
+    <ImageButton
         android:id="@+id/mina"
         android:layout_width="32dp"
         android:layout_height="32dp"
         android:layout_marginStart="6dp"
+        android:background="@android:color/transparent"
         app:layout_constraintBottom_toBottomOf="@+id/a"
         app:layout_constraintStart_toEndOf="@+id/a"
-        app:layout_constraintTop_toTopOf="@+id/a" />
+        app:layout_constraintTop_toTopOf="@+id/a"
+        app:srcCompat="@drawable/min" />
 
 
-    <Button
+    <ImageButton
         android:id="@+id/addv"
         android:layout_width="32dp"
         android:layout_height="32dp"
         android:layout_marginStart="44dp"
+        android:background="@android:color/transparent"
         app:layout_constraintBottom_toTopOf="@+id/fragmentContainerView2"
         app:layout_constraintStart_toEndOf="@+id/mina"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/add" />
 
     <TextView
         android:id="@+id/v"
@@ -270,25 +276,28 @@
         app:layout_constraintStart_toEndOf="@+id/addv"
         app:layout_constraintTop_toTopOf="@+id/addv" />
 
-    <Button
+    <ImageButton
         android:id="@+id/minv"
         android:layout_width="32dp"
         android:layout_height="32dp"
         android:layout_marginStart="6dp"
+        android:background="@android:color/transparent"
         app:layout_constraintBottom_toBottomOf="@+id/v"
         app:layout_constraintStart_toEndOf="@+id/v"
-        app:layout_constraintTop_toTopOf="@+id/v" />
+        app:layout_constraintTop_toTopOf="@+id/v"
+        app:srcCompat="@drawable/min" />
 
 
-
-    <Button
+    <ImageButton
         android:id="@+id/addo"
         android:layout_width="32dp"
         android:layout_height="32dp"
         android:layout_marginStart="44dp"
+        android:background="@android:color/transparent"
         app:layout_constraintBottom_toTopOf="@+id/fragmentContainerView2"
         app:layout_constraintStart_toEndOf="@+id/minv"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/add" />
 
     <TextView
         android:id="@+id/o"
@@ -302,14 +311,16 @@
         app:layout_constraintStart_toEndOf="@+id/addo"
         app:layout_constraintTop_toTopOf="@+id/addo" />
 
-    <Button
+    <ImageButton
         android:id="@+id/mino"
         android:layout_width="32dp"
         android:layout_height="32dp"
         android:layout_marginStart="6dp"
+        android:background="@android:color/transparent"
         app:layout_constraintBottom_toBottomOf="@+id/o"
         app:layout_constraintStart_toEndOf="@+id/o"
-        app:layout_constraintTop_toTopOf="@+id/o" />
+        app:layout_constraintTop_toTopOf="@+id/o"
+        app:srcCompat="@drawable/min" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
