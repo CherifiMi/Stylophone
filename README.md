@@ -7,7 +7,8 @@
 
 ![Frame 3](https://user-images.githubusercontent.com/98290339/154515965-97cf0cdd-d2e9-4781-bec6-164952d22226.svg)
 
-#### Ui Made in [Figma](https://www.figma.com/file/mtCF10n9wphsv1JdKG00uQ/Ux-and-shi?node-id=305%3A243)
+#### Ui Made in [Figma](https://www.figma.com/file/mtCF10n9wphsv1JdKG00uQ?embed_host=share&kind=&node-id=276%3A243&viewer=1)
+
 
 
 ## Tech stack & Open-source libraries
