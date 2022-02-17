@@ -35,6 +35,10 @@
 
 
 
+https://user-images.githubusercontent.com/98290339/154529109-5ebbc9bf-9108-4535-a16a-8c4f1f0584aa.mp4
+
+
+
 
 ## Architecture
 Stylophone is based on the MVVM architecture and the Repository pattern.
