@@ -16,7 +16,7 @@
 - Minimum SDK level 26
 - Architecture
   -MVVM Architecture (View - ViewBinding - ViewModel - Model)
-- (Processing)[https://processing.org/] for the [Sine Waves Oscilloscope](https://github.com/CherifiMi/sine-waves)
+- [Processing](https://processing.org/) for the [Sine Waves Oscilloscope](https://github.com/CherifiMi/sine-waves)
 - [Audio Track](https://developer.android.com/reference/android/media/AudioTrack)
 - [Full screen mode](https://developer.android.com/training/system-ui/immersive)
 - [setOnTouchListener](https://developer.android.com/reference/android/view/View.OnTouchListener)
